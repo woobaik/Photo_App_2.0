@@ -29,11 +29,14 @@
   <div class="mx-4">
     <% if current_user %>
     <span class="navbar navbar-text">
-      Hi, {current_user.email}
+      <%= current_user.email %>
     </span>
+    <%= link_to "Log Out", destroy_user_session_path, class:"btn btn-outline-danger", method: :delete  %>
+    <% else %>
+      <%= link_to "SIGN IN", new_user_session_path, class: "btn btn-outline-dark" %>
+      <%= link_to "SIGN UP", new_user_registration_path, class: "btn btn-outline-success ml-2" %>
     <% end %>
-    <%= link_to "SIGN IN", new_user_session_path, class: "btn btn-outline-dark" %>
-    <%= link_to "SIGN UP", new_user_registration_path, class: "btn btn-outline-success ml-2" %>
+
   </div>
 
 </nav>
