@@ -1,1 +1,13 @@
 @import "bootstrap";
+
+#root-header {
+  background: linear-gradient( rgba(0,0,0,0.6), rgba(0, 0, 0, 0.6) ),url('block');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height : 25vh;
+  margin-top: 3vh;
+  display: flex;
+  align-items: center;
+  border-radius: 0;
+  color: white;
+}
