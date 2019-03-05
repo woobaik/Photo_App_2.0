@@ -39,9 +39,10 @@ gem 'jquery-rails'
 gem 'devise', '~> 4.6', '>= 4.6.1'
 # https://github.com/FortAwesome/font-awesome-sass
 gem 'font-awesome-sass', '~> 5.6.1'
-
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+#https://stripe.com/docs/checkout/rails
+gem 'stripe'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
